@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="49px" height="113px" viewBox="0 0 49 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>sickly-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Sickly-Green" sketch:type="MSLayerGroup">
+            <g id="Potion" sketch:type="MSShapeGroup">
+                <path d="M32.0760918,47.7277239 L32.0760918,31.7277239 L48.0760918,31.7277239 L48.0760918,15.7277239 L0.0760917552,15.7277239 L0.0760917552,31.7277239 L16.0760918,31.7277239 L16.0760918,47.7277239 L0.0760917552,47.7277239 L0.0760917552,111.727724 L48.0760918,111.727724 L48.0760918,47.7277239 L32.0760918,47.7277239 Z" id="Bottle-White-Background" fill="#FFFFFF"></path>
+                <rect id="Plug" fill="#FFC462" x="16.0876465" y="-0.283813477" width="16" height="32"></rect>
+                <path d="M32.0760918,47.7277239 L32.0760918,31.7277239 L48.0760918,31.7277239 L48.0760918,15.7277239 L0.0760917552,15.7277239 L0.0760917552,31.7277239 L16.0760918,31.7277239 L16.0760918,47.7277239 L0.0760917552,47.7277239 L0.0760917552,111.727724 L48.0760918,111.727724 L48.0760918,47.7277239 L32.0760918,47.7277239 Z" id="Bottle-color" fill-opacity="0.603543931" fill="#61FBE4"></path>
+                <rect id="Bottle-spark" fill="#FFFFFF" x="16.0876465" y="47.8580933" width="16" height="16"></rect>
+            </g>
+            <rect id="Color" fill="#00FF00" sketch:type="MSShapeGroup" x="0" y="80" width="48" height="32"></rect>
+        </g>
+    </g>
+</svg>

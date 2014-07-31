@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Legend od Dungeon - Potions</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libraries/jquery-1.8.2.min.js"></script>
+    <script src="js/libraries/jquery.cookie.js"></script>
+    <script src="js/libraries/jquery.virtualmouse.js"></script>
+    <script src="js/libraries/jquery.quickdropdown.js"></script>
+    <script src="js/libraries/jquery.addons.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="icon" sizes="16x16" href="images/icons/favicon.png"> 
+    <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/touch-icon-ipad-retina.png">
+
+</head>
+<body>
+
+    <div id="reset">
+        <span>Reset all</span>
+    </div>
+
+    <div id="dropdown">
+        <div data-value="level-up" class="potion-effect good">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/level-up.jpg">
+            +1 level
+        </div>
+        <div data-value="plus-30-hp" class="potion-effect good">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/plus-30-hp.jpg">
+            +30 HP
+        </div>
+        <div data-value="plus-100-hp" class="potion-effect good">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/plus-100-hp.jpg">
+            +100 HP
+        </div>
+        <div data-value="max-strength" class="potion-effect good">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/max-strength.jpg">
+            max strength
+        </div>
+        <div data-value="plus-35-strength" class="potion-effect good">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/plus-35-strength.jpg">
+            +35 strength
+        </div>
+        <div data-value="plus-1-defense" class="potion-effect good anytime">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/plus-1-defense.jpg">
+            +1 defense
+        </div>
+        <div data-value="speed-up" class="potion-effect good anytime">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/speed-up.jpg">
+            ++speed
+        </div>
+        <div data-value="jump-up" class="potion-effect good anytime">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/jump-up.jpg">
+            ++jump
+        </div>
+        <div data-value="light-up" class="potion-effect good anytime">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/light-up.jpg">
+            ++light
+        </div>
+        <div data-value="minus-1-strength" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/minus-1-strength.jpg">
+            -1 strength
+        </div>
+        <div data-value="minus-1-defense" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/minus-1-defense.jpg">
+            -1 defense
+        </div>
+        <div data-value="speed-down" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/speed-down.jpg">
+            --speed
+        </div>
+        <div data-value="light-down" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/light-down.jpg">
+            --light
+        </div>
+        <div data-value="confusion" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/confusion.jpg">
+            confusion
+        </div>
+        <div data-value="sleep" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/sleep.jpg">
+            sleep
+        </div>
+        <div data-value="fart" class="potion-effect bad">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/fart.jpg">
+            fart
+        </div>
+        <div data-value="no-effect" class="potion-effect no-effect">
+            <img class="string" src="images/potions/string.svg">
+            <img src="images/effects/no-effect.png">
+            select effect
+        </div>
+    </div>
+
+    <ul class="potions">
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/aqua.svg">
+
+                <span class="potion-name">
+                    Aqua
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="aqua">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/azure.svg">
+                
+
+                <span class="potion-name">
+                    Azure
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="azure">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/blood-red.svg">
+                
+                <span class="potion-name">
+                    Blood red
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="blood-red">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/brown-muddy.svg">
+
+                <span class="potion-name">
+                    Brown Muddy
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="brown-muddy">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/dark-violet.svg">
+
+                <span class="potion-name">
+                    Dark Violet
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="dark-violet">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/fuchsia.svg">
+
+                <span class="potion-name">
+                    Fuchsia
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="fuchsia">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/hot-pink.svg">
+
+                <span class="potion-name">
+                    Hot Pink
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="hot-pink">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/inky-black.svg">
+
+                <span class="potion-name">
+                    Inky Black
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="inky-black">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/lime-green.svg">
+
+                <span class="potion-name">
+                    Lime Green
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="lime-green">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/milky-white.svg">
+
+                <span class="potion-name">
+                    Milky White
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="milky-white">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/murky-green.svg">
+
+                <span class="potion-name">
+                    Murky Green
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="murky-green">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/questionable-yellow.svg">
+
+                <span class="potion-name">
+                    Questionable Yellow
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="questionable-yellow">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/rusty-orange.svg">
+
+                <span class="potion-name">
+                    Rusty Orange
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="rusty-orange">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/sickly-green.svg">
+
+                <span class="potion-name">
+                    Sickly Green
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="sickly-green">
+            </span>
+
+        </li>
+
+        <!-- POTION -->
+
+        <li class="clearfix">
+
+            <span class="potion-image-name">
+
+                <img class="potion" src="images/potions/sparkling-gold.svg">
+
+                <span class="potion-name">
+                    Sparkling Gold
+                </span>
+            </span>
+
+            <span class="potion-effect-column">
+                <input type="hidden" name="sparkling-gold">
+            </span>
+
+        </li>
+    </ul>
+
+
+</body>
+</html>
+
+

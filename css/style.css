@@ -1,0 +1,146 @@
+
+/* STYLE */
+
+@font-face {
+    font-family: PressStart2P;
+    src: url(fonts/PressStart2P.ttf);
+}
+
+body {
+    background-color: #000;
+    color: #CCC;
+    font-family: PressStart2P;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#reset {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#reset span {
+    font-size: 30px;
+    padding: 10px;
+    border: 3px solid #CCC;
+}
+
+ul {
+    cursor: pointer;
+}
+
+ul li {
+    display: block;
+    width: 100%;
+    padding: 1em;
+}
+
+ul li.selected {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul li img.potion {
+    height: 70px;
+}
+
+ul li span.potion-image-name {
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+ul li span.potion-name {
+    display: block;
+    margin-top: 1em;
+}
+
+ul li span.potion-effect-column {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: calc(100% - 100px);
+    float: left;
+    vertical-align: center;
+}
+
+ul li span.potion-effect-column div {
+    height: 100%;
+}
+
+/* DROPDOWN */
+
+#dropdown {
+    position: absolute;
+    display: none;
+    max-width: 600px;
+    z-index: 1;
+    cursor: pointer;
+    background: #333;
+}
+
+#dropdown.quick-dropdown-selected {
+    display: block;
+    width: 100%;
+}
+
+.potion-effect img:not(.string) {
+    width: 75px;
+    height: 75px;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+.potion-effect {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#dropdown .potion-effect {
+}
+
+.potion-effect.good {
+    background: #B4CC8D;
+    color: #333;
+}
+
+.potion-effect.good.anytime {
+    background: #2FB200;
+}
+
+.potion-effect.bad {
+    background: #590C00;
+}
+
+.potion-effect.no-effect {
+    display: block !important; /* we'll always want it to be visible */
+    background: #333;
+    color: #999;
+}
+
+#dropdown .potion-effect .string {
+    display: none;
+}
+
+.potion-effect .string {
+    position: absolute;
+    top: 10px;
+    left: -55px;
+    height: 20px;
+}
+
+.potion-effect-column .potion-effect img:not(.string) {
+    display: none;
+}
+
+.potion-effect-column .potion-effect {
+    padding: 1em;
+    padding-left: 2em;
+    height: 48px;
+    margin-left: 6px;
+}
